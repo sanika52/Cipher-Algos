@@ -12,6 +12,7 @@ public class Main {
             System.out.println("1. Atbash Cipher");
             System.out.println("2. Caesar Cipher");
             System.out.println("3. Rail Fence Cipher");
+            System.out.println("4. Vigenere Cipher");
             System.out.println("0. Exit");
             System.out.print("Enter your choice: ");
 
@@ -71,6 +72,29 @@ public class Main {
                     System.out.println(
                             RailFence.processRailFence(railText, key, encrypt)
                     );
+                    break;
+
+                case 4:
+                    // Vigenere Cipher
+                    System.out.print("Enter text: ");
+                    String vigText = sc.nextLine();
+
+                    System.out.print("Enter key (word): ");
+                    String vigKey = sc.nextLine();
+
+                    System.out.print("1. Encrypt\n2. Decrypt\nChoose operation: ");
+                    int vigChoice = sc.nextInt();
+                    sc.nextLine();
+
+                    if (vigChoice == 1) {
+                        System.out.println("Encrypted Text: "
+                                + VigenereCipher.encrypt(vigText, vigKey));
+                    } else if (vigChoice == 2) {
+                        System.out.println("Decrypted Text: "
+                                + VigenereCipher.decrypt(vigText, vigKey));
+                    } else {
+                        System.out.println("Invalid operation choice.");
+                    }
                     break;
 
                 case 0:
