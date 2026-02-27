@@ -57,4 +57,9 @@ public class RailFenceTest {
         assertTrue(result.contains("Input Text: HLOEL"));
         assertTrue(result.contains("Key        : 2"));
     }
+
+    @Test
+    public void testLongerString() {
+        assertEquals("RCFIAEIPAHNLRE", RailFence.encryptRailFence("RAILFENCECIPHER", 3));
+    }
 }
