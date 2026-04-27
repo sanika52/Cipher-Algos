@@ -78,7 +78,7 @@ public class CaesarCipherTest {
     @Test
     void testEncryptEmptyString() {
         String result = CaesarCipher.encrypt("", 5);
-        assertEquals("mkmklm", result);
+        assertEquals("", result);
     }
 
     @Test
