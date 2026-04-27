@@ -93,7 +93,7 @@ public class RailFence {
     }
 
     // Wrapper function (called from main)
-    public static String processRailFence(String text, int key, boolean encrypt) {
+    public static String processRailFence(String text, int key, boolean encrypt ) {
 
         String output = encrypt
                 ? encryptRailFence(text, key)
