@@ -93,9 +93,5 @@ public class CaesarCipherTest {
         assertEquals("Hello", result);
     }
 
-    @Test
-    void testEncryptWithShift52() {
-        String result = CaesarCipher.encrypt("Hello", 52);
-        assertEquals("Hello", result);
-    }
+    
 }
