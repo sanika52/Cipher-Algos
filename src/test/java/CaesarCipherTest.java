@@ -5,8 +5,8 @@ public class CaesarCipherTest {
 
     @Test
     void testEncryptUppercase() {
-        String result = CaesarCipher.encrypt("ABC", 3);
-        assertEquals("DEF", result);
+        String result = CaesarCipher.encrypt("ABD", 3);
+        assertEquals("DEG", result);
     }
 
     @Test
