@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class RailFence {
 
     // Encrypt function
-    public static String encryptRailFence(String text, int key) {
+    public static String encryptRailFence(String text, int key ) {
 
         char[][] rail = new char[key][text.length()];
 
